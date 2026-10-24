@@ -1,0 +1,55 @@
+# What the agent hunts for and how it pitches you.
+# Edit this file to change your niche, rates and deal-breakers.
+
+[freelancer]
+name = "Sam Kagunye"
+title = "Python Developer | Trading Bots, Stock Market Data & Financial Dashboards"
+hourly_rate = 45          # USD, used when suggesting bids
+min_fixed_budget = 150    # skip fixed-price jobs below this
+min_hourly_rate = 25      # skip hourly jobs whose max rate is below this
+
+# Skills the agent is expected to deliver. Jobs are scored against these.
+skills = [
+  "Python",
+  "pandas",
+  "Algorithmic trading",
+  "Trading bot development",
+  "Backtesting",
+  "Stock market data APIs",
+  "Web scraping",
+  "Data analysis",
+  "Financial dashboards",
+  "Streamlit",
+  "Plotly",
+  "REST API integration",
+  "SQL",
+  "Excel / Google Sheets automation",
+  "Claude / LLM integration",
+]
+
+# Short facts the proposal writer may cite. Only put true things here.
+highlights = [
+  "Builds Python tools for market data collection, analysis and backtesting",
+  "Delivers clean, documented code with a short walkthrough video or README",
+  "Uses AI-assisted development to ship faster, with every deliverable reviewed before hand-off",
+]
+
+[filters]
+# Any job containing one of these words is dropped before scoring.
+exclude_keywords = [
+  "guaranteed profit", "forex signals", "pump", "unpaid", "test task for free",
+  "academic", "homework", "write my essay", "crypto wallet drainer",
+]
+min_client_hires = 0        # raise to 1+ to skip brand-new clients
+require_payment_verified = true
+min_score_to_draft = 70     # 0-100; jobs scoring below this are not drafted
+
+[upwork_api]
+# Search terms used when fetching jobs through the official Upwork API.
+search_queries = [
+  "python trading bot",
+  "stock market data python",
+  "backtesting strategy python",
+  "financial dashboard streamlit",
+  "web scraping python",
+]
